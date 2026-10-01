@@ -4,7 +4,7 @@
 
 ```mermaid
 flowchart TD
-    A0[Manufacturing Function]
+    A0[Run Autonomous Fleet Printing Operation]
 
     C1[Controls] --> A0
     C2[Policies & Standards] --> A0
