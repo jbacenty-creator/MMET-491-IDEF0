@@ -2,49 +2,27 @@
 
 ```mermaid
 flowchart TD
-    %% Custom styling to match your template
+    %% Custom styling for main box
     classDef mainBox fill:#f4f5f7,stroke:#333,stroke-width:2px,color:#000,font-weight:bold;
 
-    %% --------------------------------------------------
-    %% NODES
-    %% --------------------------------------------------
     %% Process Box
     A0["Manufacturing Function"]:::mainBox
 
-    %% Control Arrows (Top)
-    C1[" "]
-    C2[" "]
+    %% Top Controls
+    C1[""] -->|Controls| A0
+    C2[""] --> A0
 
-    %% Input Arrows (Left)
-    I1[" "]
-    I2[" "]
+    %% Left Inputs
+    I1[""] -->|Inputs| A0
+    I2[""] --> A0
 
-    %% Output Arrows (Right)
-    O1[" "]
-    O2[" "]
+    %% Bottom Mechanisms
+    M1[""] -->|Mechanisms| A0
+    M2[""] --> A0
 
-    %% Mechanism Arrows (Bottom)
-    M1[" "]
-    M2[" "]
-
-    %% --------------------------------------------------
-    %% CONNECTIONS & LABELS
-    %% --------------------------------------------------
-    %% Controls
-    C1 -->|Controls| A0
-    C2 --> A0
-
-    %% Inputs
-    I1 -->|Inputs| A0
-    I2 --> A0
-
-    %% Outputs
-    A0 --> O1
-    A0 -->|Outputs| O2
-
-    %% Mechanisms
-    M1 -->|Mechanisms| A0
-    M2 --> A0
+    %% Right Outputs
+    A0 --> O1[""]
+    A0 -->|Outputs| O2[""]
 
 flowchart LR
     %% Set default node styling
