@@ -5,24 +5,24 @@ flowchart TD
     %% Custom styling for main box
     classDef mainBox fill:#f4f5f7,stroke:#333,stroke-width:2px,color:#000,font-weight:bold;
 
-    %% Process Box
+    %% Central Process Box
     A0["Manufacturing Function"]:::mainBox
 
     %% Top Controls
-    C1[""] -->|Controls| A0
-    C2[""] --> A0
+    C1["Controls"] --> A0
+    C2["Policies & Standards"] --> A0
 
     %% Left Inputs
-    I1[""] -->|Inputs| A0
-    I2[""] --> A0
+    I1["Inputs"] --> A0
+    I2["Raw Materials"] --> A0
 
     %% Bottom Mechanisms
-    M1[""] -->|Mechanisms| A0
-    M2[""] --> A0
+    M1["Mechanisms"] --> A0
+    M2["Tools & Personnel"] --> A0
 
     %% Right Outputs
-    A0 --> O1[""]
-    A0 -->|Outputs| O2[""]
+    A0 --> O1["Outputs"]
+    A0 --> O2["Finished Product"]
 
 flowchart LR
     %% Set default node styling
