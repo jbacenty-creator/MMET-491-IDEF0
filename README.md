@@ -1,4 +1,5 @@
 # MMET-491-IDEF0
+
 ```mermaid
 flowchart TD
     %% Custom styling to match your template
@@ -45,7 +46,6 @@ flowchart TD
     M1 -->|Mechanisms| A0
     M2 --> A0
 
-```mermaid
 flowchart LR
     %% Set default node styling
     classDef process fill:#f9f9f9,stroke:#333,stroke-width:2px;
