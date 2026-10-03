@@ -28,21 +28,20 @@ flowchart LR
 
     C1["Control"]
     C2["Safety Guidelines/Environmental Limitations"]
-    C3[Control / Budget 3]
 
-    M1[Personnel / Team]
-    M2[Software / Tools]
-    M3[Hardware / Equipment]
+    M1["Mobile Printing Fleet"]
+    M2["Base Mixing & Charging Station"]
+    M3["Control Software & Hardware"]
 
-    O1[Final Output 1]
-    O2[Final Output 2]
+    O1["Completed Structure"]
+    O2["Fully-Functioning Machine"]
 
-    A1[A1: Prepare Print Path & Job Schedule]
-    A2[A2: Monitor Fleet]
-    A3[A3: Prepare and Supply Concrete Mix]
-    A4[A4: Dispatch & Resupply Tenders]
-    A5[A5: Extrude Layered Structure]
-    A6[A6: Inspect & Audit Building]
+    A1["A1: Prepare Print Path & Job Schedule"]
+    A2["A2: Monitor Fleet"]
+    A3["A3: Prepare and Supply Concrete Mix"]
+    A4["A4: Dispatch & Resupply Tenders"]
+    A5["A5: Extrude Layered Structure"]
+    A6["A6: Inspect & Audit Building"]
 
     I1 --> A1
     I2 --> A2
@@ -54,18 +53,20 @@ flowchart LR
     C3 --> A5
     C3 --> A6
 
-    M1 --> A1
+    M1 --> A5
     M1 --> A2
+    M1 --> A4
     M2 --> A3
-    M2 --> A4
-    M3 --> A5
+    M3 --> A1
     M3 --> A6
 
-    A1 -->|Requirements Doc| A2
-    A2 -->|Architecture Blueprint| A3
-    A3 -->|Code Modules| A4
-    A4 -->|Tested Build| A5
-    A5 -->|Live System| A6
+    A1 -->|Waypoints & Scheduling| A2
+    A1 -->|Batching Orders| A3
+    A2 -->|Interception Targets| A4
+    A2 -->|Print Trajectory| A5
+    A3 -->|Dealing with External Conditions| A4
+    A4 -->|Material & Power Feed| A5
+    A5 -->|Layer Geometry| A6
 
     A5 --> O1
     A6 --> O2
