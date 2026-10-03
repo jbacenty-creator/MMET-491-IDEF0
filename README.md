@@ -12,7 +12,6 @@ flowchart TD
     I1["Inputs: System CAD & Toolpath Data (G-Codes)"] --> A0
     I2["Raw Material Ingredients for Concrete"] --> A0
 
-    M1["Autonomous Fleet"] --> A0
     M2["Base Station (Charging & Supply Unit)"] --> A0
 
     A0 --> O1["Finished Product"]
