@@ -12,7 +12,7 @@ flowchart TD
     I1["Inputs: System CAD & Toolpath Data (G-Codes)"] --> A0
     I2["Raw Material Ingredients for Concrete"] --> A0
 
-    M2["Base Station (Charging & Supply Unit)"] --> A0
+    M1["Base Station (Charging & Supply Unit)"] --> A0
 
     A0 --> O1["Finished Product"]
 ```
@@ -23,11 +23,11 @@ flowchart TD
 
 ```mermaid
 flowchart LR
-    I1[Input 1]
-    I2[Input 2]
+    I1["Inputs: System CAD & Toolpath Data"]
+    I2["Raw Material Ingredients for Concrete"]
 
-    C1[Control / Policy 1]
-    C2[Control / Standard 2]
+    C1["Control"]
+    C2["Safety Guidelines/Environmental Limitations"]
     C3[Control / Budget 3]
 
     M1[Personnel / Team]
