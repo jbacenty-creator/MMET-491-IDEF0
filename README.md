@@ -39,12 +39,12 @@ flowchart LR
     O1[Final Output 1]
     O2[Final Output 2]
 
-    A1[A1: Assess Requirements]
-    A2[A2: Design System]
-    A3[A3: Develop Components]
-    A4[A4: Integrate & Test]
-    A5[A5: Deploy Solution]
-    A6[A6: Maintain & Audit]
+    A1[A1: Prepare Print Path & Job Schedule]
+    A2[A2: Monitor Fleet]
+    A3[A3: Prepare and Supply Concrete Mix]
+    A4[A4: Dispatch & Resupply Tenders]
+    A5[A5: Extrude Layered Structure]
+    A6[A6: Inspect & Audit Building]
 
     I1 --> A1
     I2 --> A2
