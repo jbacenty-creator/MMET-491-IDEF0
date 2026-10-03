@@ -50,8 +50,8 @@ flowchart LR
     C1 --> A2
     C2 --> A3
     C2 --> A4
-    C3 --> A5
-    C3 --> A6
+    C1 --> A5
+    C2 --> A6
 
     M1 --> A5
     M1 --> A2
