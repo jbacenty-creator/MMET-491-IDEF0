@@ -4,19 +4,19 @@
 
 ```mermaid
 flowchart TD
-    A0[Run Autonomous Fleet Printing Operation]
+    A0["Run Autonomous Fleet Printing Operation"]
 
-    C1[Controls] --> A0
-    C2[Safety Guidelines/Environmental Limitations] --> A0
+    C1["Controls"] --> A0
+    C2["Safety Guidelines/Environmental Limitations"] --> A0
 
-    I1[Inputs: System CAD & Toolpath Data (G-Codes)] --> A0
-    I2[Raw Material Ingredients for Concrete] --> A0
+    I1["Inputs: System CAD & Toolpath Data (G-Codes)"] --> A0
+    I2["Raw Material Ingredients for Concrete"] --> A0
 
-    M1[Autonomous Fleet] --> A0
-    M2[Base Station (Charging & Supply Unit)] --> A0
+    M1["Autonomous Fleet"] --> A0
+    M2["Base Station (Charging & Supply Unit)"] --> A0
 
-    A0 --> O1[Outputs]
-    A0 --> O2[Finished Product]
+    A0 --> O1["Outputs"]
+    A0 --> O2["Finished Product"]
 ```
 
 ---
