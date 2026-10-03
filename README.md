@@ -15,8 +15,7 @@ flowchart TD
     M1["Autonomous Fleet"] --> A0
     M2["Base Station (Charging & Supply Unit)"] --> A0
 
-    A0 --> O1["Outputs"]
-    A0 --> O2["Finished Product"]
+    A0 --> O1["Finished Product"]
 ```
 
 ---
