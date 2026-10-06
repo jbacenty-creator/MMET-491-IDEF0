@@ -36,11 +36,31 @@ flowchart LR
     O1["Completed Structure"]
     O2["Fully-Functioning Machine"]
 
-    A1["A1: Prepare Print Path & Job Schedule"]
+    subgraph A1["A1: Prepare Print Path & Job Schedule"]
+        direction TB
+        A1_1 ["A1.1: Parsing G-Code & Slicing Layers"]
+        A1_2 ["A1.2: Generate Paths with No Collisions"]
+        A1_1 --> A1_2
+    end
+
     A2["A2: Monitor Fleet"]
-    A3["A3: Prepare and Supply Concrete Mix"]
+
+    subgraph A3["A3: Prepare and Supply Concrete Mix"]
+        direction TB
+        A3_1 ["A3.1: Prepare and Batch Raw Ingredients"]
+        A3_2 ["A3.2: Mix & Condition Slurry"]
+        A3_1 --> A3_2
+    end
+
     A4["A4: Dispatch & Resupply Tenders"]
-    A5["A5: Extrude Layered Structure"]
+    
+    subgraph A5["A5: Extrude Layered Structure"]
+        direction TB
+        A5_1 ["A5.1: Position Arm & Toolhead For Proper Pathing"]
+        A5_2 ["A5.2: Control Cement Extrusion Flow Rate"]
+        A5_1 --> A5_2
+    end
+
     A6["A6: Inspect & Audit Building"]
 
     I1 --> A1
